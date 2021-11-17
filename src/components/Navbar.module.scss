@@ -1,0 +1,59 @@
+@import '../sass/index';
+
+.navbar {
+  width: 100%;
+  height: $headerHeight;
+  background-color: $light;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  &__topleft {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__topicon {
+      font-size: $font-md;
+      margin-left: $spacing-sm;
+      color: $dark;
+      font-size: $font-lg;
+      cursor: pointer;
+    }
+  }
+  &__topcenter {
+    flex: 6;
+    &__navmenu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      &__navitem {
+        margin-right: $spacing-md;
+        font-family: $RobotoMono;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+  &__topright {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__topimg {
+      width: 40px;
+      height: 40px;
+      border-radius: $circleRadius;
+      object-fit: cover;
+      margin-right: $spacing-md;
+    }
+    &__search {
+      color: $dark;
+      font-size: $font-lg;
+      cursor: pointer;
+    }
+  }
+}
