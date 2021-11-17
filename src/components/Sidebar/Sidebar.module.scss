@@ -9,6 +9,20 @@
   display: flex;
   flex-direction: column;
   &__items {
+    &__projects {
+      list-style: none;
+      &__item {
+        margin-bottom: $spacing-lg;
+        display: flex;
+        align-items: center;
+        font-size: $font-md;
+        &__icon {
+          margin-right: $spacing-sm;
+          cursor: pointer;
+          font-size: $font-xl;
+        }
+      }
+    }
     display: flex;
     flex-direction: column;
     &__title {
@@ -44,6 +58,7 @@
       margin-top: $spacing-md;
       &__item {
         margin: 0 $font-sm;
+        cursor: pointer;
       }
     }
   }

@@ -554,7 +554,19 @@ p {
   font-weight: 700;
 }
 
+.post__info__date {
+  font-size: 12px;
+}
+
 .post__info__description {
-  font-size: 18px;
+  font-size: 14px;
+  overflow: hidden;
+  /* sets up ellipsis on blog post overflow */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* number of lines shown */
+  -webkit-line-clamp: 3;
+  /* orients overflow direction */
+  -webkit-box-orient: vertical;
 }
 /*# sourceMappingURL=Post.module.css.map */

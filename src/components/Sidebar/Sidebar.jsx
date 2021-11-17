@@ -17,6 +17,55 @@ export default function Sidebar() {
         </p>
       </div>
       <div className={classes.sidebar__items}>
+        <span className={classes.sidebar__items__title}>projects</span>
+        <ul className={classes.sidebar__items__projects}>
+          <li className={classes.sidebar__items__projects__item}>
+            <BsGithub className={classes.sidebar__items__projects__item__icon}/>
+            Gotchi Buddy
+          </li>
+          <li className={classes.sidebar__items__projects__item}>
+            <BsGithub className={classes.sidebar__items__projects__item__icon}/>
+            PikChu
+          </li>
+          <li className={classes.sidebar__items__projects__item}>
+            <BsGithub className={classes.sidebar__items__projects__item__icon}/>
+            Ramblr
+          </li>
+          <li className={classes.sidebar__items__projects__item}>
+            <BsGithub className={classes.sidebar__items__projects__item__icon}/>
+            Surrender
+          </li>
+          <li className={classes.sidebar__items__projects__item}>
+            <BsGithub className={classes.sidebar__items__projects__item__icon}/>
+            Fin Cap
+          </li>
+          <li className={classes.sidebar__items__projects__item}>
+            <BsGithub className={classes.sidebar__items__projects__item__icon}/>
+            Lyrically
+          </li>
+          <li className={classes.sidebar__items__projects__item}>
+            <BsGithub className={classes.sidebar__items__projects__item__icon}/>
+            Counters
+          </li>
+          <li className={classes.sidebar__items__projects__item}>
+            <BsGithub className={classes.sidebar__items__projects__item__icon}/>
+            Quadrants
+          </li>
+          <li className={classes.sidebar__items__projects__item}>
+            <BsGithub className={classes.sidebar__items__projects__item__icon}/>
+            DragonDex
+          </li>
+          <li className={classes.sidebar__items__projects__item}>
+            <BsGithub className={classes.sidebar__items__projects__item__icon}/>
+            TodoList
+          </li>
+          <li className={classes.sidebar__items__projects__item}>
+            <BsGithub className={classes.sidebar__items__projects__item__icon}/>
+            This Site!
+          </li>
+        </ul>
+      </div>
+      <div className={classes.sidebar__items}>
         <span className={classes.sidebar__items__title}>blog categories</span>
         <ul className={classes.sidebar__items__list}>
           <li className={classes.sidebar__items__list__item}>JS</li>

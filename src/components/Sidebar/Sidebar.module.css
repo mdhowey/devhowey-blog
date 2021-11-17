@@ -540,6 +540,27 @@ p {
           flex-direction: column;
 }
 
+.sidebar__items__projects {
+  list-style: none;
+}
+
+.sidebar__items__projects__item {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+.sidebar__items__projects__item__icon {
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 36px;
+}
+
 .sidebar__items__title {
   font-family: "Roboto Mono", monospace;
   text-transform: uppercase;
@@ -580,5 +601,6 @@ p {
 
 .sidebar__items__icons__item {
   margin: 0 14px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=Sidebar.module.css.map */

@@ -28,10 +28,18 @@
       font-weight: 700;
     }
     &__date {
-      
+      font-size: $font-xs;
     }
     &__description {
-      font-size: $font-md;
+      font-size: $font-sm;
+      overflow: hidden;
+      /* sets up ellipsis on blog post overflow */
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      /* number of lines shown */
+      -webkit-line-clamp: 3;
+      /* orients overflow direction */
+      -webkit-box-orient: vertical;
     }
   }
 }
