@@ -452,7 +452,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Rubik Mono One", sans-serif, "Roboto Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-box-sizing: border-box;
@@ -511,5 +511,50 @@ p {
   font-size: 12px;
   font-family: "Roboto Mono", monospace;
   color: #333333;
+}
+
+.post {
+  width: 100%;
+  min-width: 375px;
+  max-width: 750px;
+  margin: 0;
+}
+
+.post__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.post__info__cats {
+  margin: 16px 0;
+}
+
+.post__info__cats__cat {
+  font-style: italic;
+  margin-right: 8px;
+  padding: 4px 8px;
+  border: 1px solid #333333;
+  letter-spacing: 1px;
+}
+
+.post__info__title {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.post__info__description {
+  font-size: 18px;
 }
 /*# sourceMappingURL=Post.module.css.map */

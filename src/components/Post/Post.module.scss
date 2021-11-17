@@ -1,1 +1,37 @@
 @import '../../sass/index';
+
+.post {
+  width: 100%;
+  min-width: 375px;
+  max-width: 750px;
+  margin: 0;
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    &__cats {
+      margin: $spacing-md 0;
+      &__cat {
+        font-style: italic;
+        margin-right: $spacing-sm;
+        padding: $spacing-xs $spacing-sm;
+        border: 1px solid $dark;
+        letter-spacing: $spacing-xxs;
+      }
+    }
+    &__title {
+      margin-bottom: $spacing-sm;
+      font-size: $font-lg;
+      font-weight: 700;
+    }
+    &__date {
+      
+    }
+    &__description {
+      font-size: $font-md;
+    }
+  }
+}
