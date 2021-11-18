@@ -1,0 +1,85 @@
+@import '../../sass/index';
+
+.navbar {
+  width: 100%;
+  height: $headerHeight;
+  background-color: $light;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  &__topleft {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__topicon {
+      font-size: $font-md;
+      margin-left: $spacing-sm;
+      color: $dark;
+      font-size: $font-lg;
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
+    }
+  }
+  &__topcenter {
+    flex: 6;
+    &__navmenu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      &__navitem {
+        margin: 0 $spacing-sm;
+        font-size: $font-sm;
+        font-family: $RobotoMono;
+        text-transform: uppercase;
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+          cursor: pointer;
+          color: $primary;
+        }
+      }
+    }
+  }
+  &__topright {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__topimg {
+      width: 40px;
+      height: 40px;
+      border-radius: $circleRadius;
+      object-fit: cover;
+      margin-right: $spacing-md;
+    }
+    &__search {
+      color: $dark;
+      font-size: $font-lg;
+      margin-right: $spacing-md;
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
+    }
+    &__nouser {
+      font-size: $font-xxs;
+      margin-right: $spacing-md;
+      font-family: $RobotoMono;
+      text-transform: uppercase;
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
+    }
+  }
+}

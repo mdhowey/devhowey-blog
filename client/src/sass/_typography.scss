@@ -1,0 +1,62 @@
+@import './mixins';
+@import './variables';
+
+h1 {
+  font-style: normal;
+  // font-weight: bold;
+  font-size: $font-xxl;
+  font-family: $Rubik;
+  color: $dark;
+  // line-height: ;
+  // letter-spacing: 10px;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-xl;
+  font-family: $RobotoMono;
+  color: $dark;
+  // line-height: ;
+  // letter-spacing: ;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: $font-lg;
+  font-family: $RobotoMono;
+  color: $dark;
+  // line-height: ;
+  // letter-spacing: ;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-md;
+  font-family: $RobotoMono;
+  color: $dark;
+  // line-height: ;
+  // letter-spacing: ;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: $font-sm;
+  font-family: $RobotoMono;
+  color: $dark;
+  // line-height: ;
+  // letter-spacing: ;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-xs;
+  font-family: $RobotoMono;
+  color: $dark;
+  // line-height: ;
+  // letter-spacing: ;
+}

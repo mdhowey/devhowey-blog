@@ -1,0 +1,10 @@
+@import '../../sass/index';
+
+.posts {
+  flex: 9;
+  margin: $spacing-lg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

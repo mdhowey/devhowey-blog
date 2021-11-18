@@ -1,0 +1,59 @@
+@import '../../sass/index';
+
+.newblog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $footerHeight;
+  &__img {
+    width: 68vw;
+    object-fit: cover;
+    height: 300px;
+    border-radius: $btnRadius;
+    margin-bottom: $spacing-md;
+  }
+  &__form {
+    position: relative;
+    &__group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__icon {
+        margin-top: $spacing-xs;
+        margin-right: $spacing-xs;
+        font-size: $font-lg;
+        &:hover{
+          cursor: pointer;
+          color: $primary;
+        }
+      }
+      &__input,
+      &__text {
+        font-size: $font-md;
+        border: none;
+        padding: $spacing-sm;
+        width: 60vw;
+        &:focus {
+          outline: none;
+        }
+      }
+      &__text {
+        font-size: $font-sm;
+        width: 68vw;
+        resize: none;
+      }
+      &__submit {
+        border: none;
+        background-color: $dkbg;
+        padding: $spacing-sm $spacing-md;
+        color: $dark;
+        border-radius: $btnRadius;
+        &:hover{
+          cursor: pointer;
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}

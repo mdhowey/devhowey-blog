@@ -1,0 +1,29 @@
+@import '../../sass/index';
+
+.header {
+  margin-top: $headerHeight;
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $RobotoMono;
+    color: $primary;
+    &__subtitleLg {
+      position: absolute;
+      top: 15%;
+      font-size: $font-xl;
+      font-family: $Rubik;
+    }
+    &__subtitleSm {
+      position: absolute;
+      top: 26%;
+      font-size: $font-md;
+      color: $light;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+}
