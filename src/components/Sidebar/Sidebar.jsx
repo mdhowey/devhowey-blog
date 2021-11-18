@@ -61,6 +61,10 @@ export default function Sidebar() {
           </li>
           <li className={classes.sidebar__items__projects__item}>
             <BsGithub className={classes.sidebar__items__projects__item__icon}/>
+            Interview Prep
+          </li>
+          <li className={classes.sidebar__items__projects__item}>
+            <BsGithub className={classes.sidebar__items__projects__item__icon}/>
             This Site!
           </li>
         </ul>
