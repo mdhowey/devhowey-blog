@@ -35,7 +35,7 @@ router.get('/', async (req, res) => {
   try {
     let posts;
     if (username) {
-      posts = await Blog.Find({username})
+      posts = await Blog.find({username})
     } else if (tags) {
       posts = await Blog.find(
         {
