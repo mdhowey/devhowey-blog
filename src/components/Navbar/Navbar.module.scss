@@ -19,7 +19,10 @@
       margin-left: $spacing-sm;
       color: $dark;
       font-size: $font-lg;
-      cursor: pointer;
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
     }
   }
   &__topcenter {
@@ -35,7 +38,10 @@
         margin-right: $spacing-md;
         font-family: $RobotoMono;
         text-transform: uppercase;
-        cursor: pointer;
+        &:hover {
+          cursor: pointer;
+          color: $primary;
+        }
       }
     }
   }
@@ -54,7 +60,11 @@
     &__search {
       color: $dark;
       font-size: $font-lg;
-      cursor: pointer;
+      margin-right: $spacing-md;
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
     }
   }
 }

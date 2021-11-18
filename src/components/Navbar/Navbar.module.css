@@ -549,7 +549,11 @@ p {
   margin-left: 8px;
   color: #333333;
   font-size: 24px;
+}
+
+.navbar__topleft__topicon:hover {
   cursor: pointer;
+  color: #ff6e73;
 }
 
 .navbar__topcenter {
@@ -577,7 +581,11 @@ p {
   margin-right: 16px;
   font-family: "Roboto Mono", monospace;
   text-transform: uppercase;
+}
+
+.navbar__topcenter__navmenu__navitem:hover {
   cursor: pointer;
+  color: #ff6e73;
 }
 
 .navbar__topright {
@@ -607,6 +615,11 @@ p {
 .navbar__topright__search {
   color: #333333;
   font-size: 24px;
+  margin-right: 16px;
+}
+
+.navbar__topright__search:hover {
   cursor: pointer;
+  color: #ff6e73;
 }
 /*# sourceMappingURL=Navbar.module.css.map */

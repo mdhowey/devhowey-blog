@@ -513,33 +513,21 @@ p {
   color: #333333;
 }
 
-.blogpost {
-  -webkit-box-flex: 9;
-      -ms-flex: 9;
-          flex: 9;
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.blogpost__wrapper {
-  padding: 16px 32px;
-}
-
-.blogpost__wrapper__img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  margin: 8px 0;
   width: 100%;
-  margin-top: 16px;
-  border-radius: 12px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
-.blogpost__wrapper__container {
+.footer__center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,58 +535,30 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.blogpost__wrapper__container__title {
-  font-size: 36px;
-  margin-bottom: 16px;
-}
-
-.blogpost__wrapper__container__btncontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.blogpost__wrapper__container__btncontainer__edit {
-  color: silver;
-}
-
-.blogpost__wrapper__container__btncontainer__delete {
-  color: #ff6e73;
-}
-
-.blogpost__wrapper__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.blogpost__wrapper__info__author {
-  font-size: 24px;
-  font-weight: 700;
+.footer__center__links {
+  background-color: #f2f2f2;
+  padding-top: 4px;
+  border-radius: 12px;
 }
 
-.blogpost__wrapper__info__date {
-  font-size: 12px;
-  font-style: italic;
-  color: white;
-  background-color: #333333;
-  padding: 4px 8px;
-  border-radius: 48px;
+.footer__center__links__icon {
+  margin: 0 4px;
 }
 
-.blogpost__wrapper__text {
-  font-size: 14px;
-  font-weight: 500;
+.footer__center__links__icon:hover {
+  cursor: pointer;
+  color: #ff6e73;
 }
-/*# sourceMappingURL=BlogPost.module.css.map */
+
+.footer__center__howey {
+  font-size: 10px;
+}
+/*# sourceMappingURL=Footer.module.css.map */

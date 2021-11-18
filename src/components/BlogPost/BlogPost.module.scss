@@ -21,7 +21,8 @@
         margin-bottom: $spacing-md;
       }
       &__btncontainer {
-        display: inline-block;
+        display: flex;
+        justify-content: flex-start;
         &__edit {
           color: $dkbg;
         }
