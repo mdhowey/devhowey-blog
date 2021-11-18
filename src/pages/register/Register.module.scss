@@ -6,10 +6,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(rgba($dark, 0.3), rgba($light, 0.5)), url('https://www.exascaleproject.org/wp-content/uploads/2019/11/PathForward-scaled.jpg');
+  background-image: linear-gradient(rgba($dark, 0.3), rgba($light, 0.5)), url('https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id1131051440?k=20&m=1131051440&s=170667a&w=0&h=Dw1FkoKPU5ym1TPMQPWlgSkz67SslHnkELR4VwYIguA=');
     background-size: cover;
   &__title {
     margin-bottom: $spacing-md;
+    color: $light;
     padding: 0;
     line-height: $spacing-lg;
     font-size: $font-lg;

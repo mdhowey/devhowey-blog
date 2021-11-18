@@ -528,13 +528,14 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.3)), to(rgba(255, 255, 255, 0.5))), url("https://www.exascaleproject.org/wp-content/uploads/2019/11/PathForward-scaled.jpg");
-  background-image: linear-gradient(rgba(51, 51, 51, 0.3), rgba(255, 255, 255, 0.5)), url("https://www.exascaleproject.org/wp-content/uploads/2019/11/PathForward-scaled.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.3)), to(rgba(255, 255, 255, 0.5))), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id1131051440?k=20&m=1131051440&s=170667a&w=0&h=Dw1FkoKPU5ym1TPMQPWlgSkz67SslHnkELR4VwYIguA=");
+  background-image: linear-gradient(rgba(51, 51, 51, 0.3), rgba(255, 255, 255, 0.5)), url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id1131051440?k=20&m=1131051440&s=170667a&w=0&h=Dw1FkoKPU5ym1TPMQPWlgSkz67SslHnkELR4VwYIguA=");
   background-size: cover;
 }
 
 .register__title {
   margin-bottom: 16px;
+  color: white;
   padding: 0;
   line-height: 32px;
   font-size: 24px;
