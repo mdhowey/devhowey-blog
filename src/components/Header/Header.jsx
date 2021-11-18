@@ -4,8 +4,8 @@ export default function Header() {
   return (
     <div className={classes.header}>
       <div className={classes.header__titles}>
-        <span className={classes.header__titles__subtitleSm}>devhowey</span>
-        <span className={classes.header__titles__subtitleLg}>Blog & Portfolio</span>
+        <span className={classes.header__titles__subtitleLg}>devhowey</span>
+        <span className={classes.header__titles__subtitleSm}>no one has ever regretted a tattoo</span>
       </div>
       <img 
         className={classes.header__img} 

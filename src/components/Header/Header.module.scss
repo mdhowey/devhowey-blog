@@ -7,17 +7,17 @@
     flex-direction: column;
     align-items: center;
     font-family: $RobotoMono;
-    color: $dark;
-    &__subtitleSm {
-      position: absolute;
-      top: 20%;
-      font-size: $font-lg;
-      color: $light;
-    }
+    color: $primary;
     &__subtitleLg {
       position: absolute;
-      top: 25%;
-      font-size: $font-xxl;
+      top: 15%;
+      font-size: $font-xl;
+      font-family: $Rubik;
+    }
+    &__subtitleSm {
+      position: absolute;
+      top: 26%;
+      font-size: $font-md;
       color: $light;
     }
   }

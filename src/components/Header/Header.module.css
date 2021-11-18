@@ -529,20 +529,20 @@ p {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Roboto Mono", monospace;
-  color: #333333;
-}
-
-.header__titles__subtitleSm {
-  position: absolute;
-  top: 20%;
-  font-size: 24px;
-  color: white;
+  color: #ff6e73;
 }
 
 .header__titles__subtitleLg {
   position: absolute;
-  top: 25%;
-  font-size: 48px;
+  top: 15%;
+  font-size: 36px;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.header__titles__subtitleSm {
+  position: absolute;
+  top: 26%;
+  font-size: 18px;
   color: white;
 }
 
