@@ -6,6 +6,8 @@ const mongoose = require('mongoose');
 const authRoute = require('./routes/auth');
 const usersRoute = require('./routes/users');
 const postsRoute = require('./routes/posts');
+const tagsRoute = require('./routes/tags');
+const multer = require('multer');
 
 dotenv.config();
 app.use(express.json());
@@ -17,9 +19,25 @@ mongoose.connect(process.env.MONGO_URL, {
   .then(console.log('Connected to MONGODB!!!'))
   .catch(err=> console.log(err));
 
-  app.use('/api/auth', authRoute);
-  app.use('/api/users', usersRoute);
-  app.use('/api/posts', postsRoute);
+const store = multer.diskStorage({
+  destination:(req, file, callback) => {
+    callback(null, 'assests')
+  }, 
+  filename: (req, file, callback) => {
+    callback(null, req.body.name);
+  }
+})
+
+const upload = multer({ store: store })
+
+app.post('/api/upload', upload.single('file', (req, res) => {
+  res.status(200).json('File uploaded successfully')
+}))
+
+app.use('/api/auth', authRoute);
+app.use('/api/users', usersRoute);
+app.use('/api/posts', postsRoute);
+app.use('/api/tags', tagsRoute);
 
 app.listen(PORT, () => {
   console.log(`API is running on port ${PORT}`)
