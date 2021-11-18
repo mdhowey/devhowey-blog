@@ -5,6 +5,19 @@ const bcrypt = require('bcrypt');
 
 /* ==== Routes ==== */
 
+/* Read */
+router.get('/:id', async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id);
+    const { password, ...otherUserData} = user._doc;
+    
+    res.status(200).json(otherUserData);
+
+  } catch (err) {
+    res.status(500).json(err)
+  }
+})
+
 /* Update */
 router.put('/:id', async(req, res) => {
   if(req.body.userId === req.params.id){
