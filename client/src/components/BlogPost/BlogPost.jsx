@@ -13,7 +13,7 @@ export default function BlogPost() {
   // location hook --> super cool!
   const path = location.pathname.split('/')[2];
   const [blogPost, setBlogPost] = useState([]);
-
+  const PF = 'http://localhost:3000/images/';
 
   useEffect(() => {
     const getBlogPost = async () => {
@@ -29,7 +29,7 @@ export default function BlogPost() {
 
           <img
             className={classes.blogpost__wrapper__img}
-            src={blogPost.img}
+            src={PF + blogPost.img}
             alt='new react devtools'
           />
 

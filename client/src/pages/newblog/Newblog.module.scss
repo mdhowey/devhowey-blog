@@ -2,57 +2,68 @@
 
 .newblog {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: $footerHeight;
+  justify-content: center;
+  flex-direction: column;
+  // margin-top: $headerHeight;
+  background: linear-gradient(rgb($light, 0.1), rgb($dark, 0.2));
   &__img {
-    width: 68vw;
-    object-fit: cover;
+    margin-top: $headerHeight;
+    width: 75vw;
     height: 300px;
+    object-fit: cover;
     border-radius: $btnRadius;
-    margin-bottom: $spacing-md;
+    max-width: 800px;
   }
   &__form {
-    position: relative;
-    &__group {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &__icon {
-        margin-top: $spacing-xs;
-        margin-right: $spacing-xs;
-        font-size: $font-lg;
-        &:hover{
-          cursor: pointer;
-          color: $primary;
-        }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $dark;
+    width: 75vw;
+    max-width: 800px;
+    margin: $spacing-md 0 $spacing-xxl 0;
+    &__icon {
+      font-size: $font-xxl;
+      margin: $spacing-md 0;
+      background-color: $secondary;
+      padding: $spacing-sm;
+      border-radius: $btnRadius;
+      &:hover {
+        cursor: pointer;
+        color: $primary;
       }
-      &__input,
-      &__text {
-        font-size: $font-md;
-        border: none;
-        padding: $spacing-sm;
-        width: 60vw;
-        &:focus {
-          outline: none;
-        }
+    }
+    &__input,
+    &__text {
+      margin-bottom: $spacing-md;
+      font-family: $RobotoMono;
+      font-size: $font-md;
+      border: none;
+      border-bottom: 1px solid $dark;
+      padding: $spacing-sm;
+      border-radius: $btnRadius;
+      color: $dark;
+      &:focus {
+        outline: none;
       }
-      &__text {
-        font-size: $font-sm;
-        width: 68vw;
-        resize: none;
-      }
-      &__submit {
-        border: none;
-        background-color: $dkbg;
-        padding: $spacing-sm $spacing-md;
-        color: $dark;
-        border-radius: $btnRadius;
-        &:hover{
-          cursor: pointer;
-          background-color: $primary;
-        }
+    }
+    &__text {
+      resize: none;
+      padding: $spacing-sm;
+      border-radius: $btnRadius;
+    }
+    &__submit {
+      font-family: $RobotoMono;
+      font-size: $font-md;
+      border: none;
+      padding: $spacing-sm 0;
+      border-radius: $btnRadius;
+      background-color: $secondary;
+      &:hover {
+        cursor: pointer;
+        background-color: $primary;
+        color: $light;
       }
     }
   }

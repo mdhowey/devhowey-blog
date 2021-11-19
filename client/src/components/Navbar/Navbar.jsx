@@ -24,25 +24,25 @@ export default function Navbar() {
           <li>
             <Link className={classes.navbar__topcenter__navmenu__navitem} to='/'>about</Link>
           </li>
-          {/* <li>
-            <Link className={classes.navbar__topcenter__navmenu__navitem} to='/'>blog</Link>
-          </li> */}
           <li>
             <Link className={classes.navbar__topcenter__navmenu__navitem} to='/'>projects</Link>
           </li>
           <li>
             <Link className={classes.navbar__topcenter__navmenu__navitem} to='/'>contact</Link>
           </li>
-          <li>
-            {user && <Link className={classes.navbar__topcenter__navmenu__navitem} to='/newblog'>New Blog</Link>}
-          </li>
-          <li>
-            {user && 
-              <Link 
+        {user &&
+          <>
+            <li>
+              <Link className={classes.navbar__topcenter__navmenu__navitem} to='/newblog'>new blog</Link>
+            </li>
+            <li>
+                <Link 
                 className={classes.navbar__topcenter__navmenu__navitem} 
                 onClick={handleLogout}
-                to='/'>logout</Link>}
-          </li>
+                to='/'>logout</Link>
+            </li>
+          </>
+        }
         </ul>
       </div>
       <div className={classes.navbar__topright}>
@@ -50,7 +50,7 @@ export default function Navbar() {
           user ? (
             <img 
               className={classes.navbar__topright__topimg} 
-              src='https://st3.depositphotos.com/5326338/12864/i/950/depositphotos_128646326-stock-photo-actor-steve-howey.jpg' 
+              src={user.proilePic}
               alt='test profile'
               />
           ) : (

@@ -1,15 +1,16 @@
-import { Link } from 'react-router-dom'
-import classes from './Post.module.scss'
-import DefaultImg from '../../assests/portfolio_backgrounds_1.jpg'
+import { Link } from 'react-router-dom';
+import classes from './Post.module.scss';
+import DefaultImg from '../../assests/portfolio_backgrounds_1.jpg';
 
-export default function Post({post}) {
+export default function Post({ post }) {
+  const PF = 'http://localhost:3000/images/';
   return (
     <div className={classes.post}>
       {post.photo ? (
 
         <img
           className={classes.post__img}
-          src={post.photo} 
+          src={PF + post.photo} 
           alt='new react devtools' 
         />
 
@@ -27,7 +28,6 @@ export default function Post({post}) {
             {post.tags.map((t) => (
               <span className={classes.post__info__tags__tag}>{t}</span>
             ))}
-            <span className={classes.post__info__tags__tag}>Express</span>
           </div>
           <span>
             <Link className={classes.post__info__title} to={`/post/${post._id}`}>{post.title}</Link>
