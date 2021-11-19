@@ -541,6 +541,14 @@ p {
   font-size: 24px;
 }
 
+.register__error {
+  color: white;
+  margin-bottom: 16px;
+  background-color: #ff6e73;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+
 .register__form {
   display: -webkit-box;
   display: -ms-flexbox;

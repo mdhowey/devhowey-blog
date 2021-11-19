@@ -15,6 +15,13 @@
     line-height: $spacing-lg;
     font-size: $font-lg;
   }
+  &__error {
+    color: $light;
+    margin-bottom: $spacing-md;
+    background-color: $primary;
+    padding: $spacing-sm $spacing-md; 
+    border-radius: $btnRadius;
+  }
   &__form {
     display: flex;
     justify-content: center;
