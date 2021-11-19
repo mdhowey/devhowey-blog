@@ -8,7 +8,7 @@ export default function Login() {
 
   const userRef = useRef();
   const passwordRef = useRef();
-  const { user, dispatch, isFetching } = useContext(Context);
+  const { dispatch, isFetching } = useContext(Context);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,11 +19,12 @@ export default function Login() {
         password: passwordRef.current.value,
       });
       dispatch({ type: 'LOGIN_SUCCESS', payload: res.data });
+      res.data && window.location.replace('/');
     } catch (err) {
       dispatch({ type: 'LOGIN_FAILURE' });
     }
   };
-  console.log(user)
+
   return (
     <div className={classes.login}>
       <h1 className={classes.login__title}>Login</h1>
