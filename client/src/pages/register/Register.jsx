@@ -28,11 +28,9 @@ export default function Register() {
   return (
     <div className={classes.register}>
       <h1 className={classes.register__title}>Register</h1>
-      {
-        error && <span className={classes.register__error}>
-          Username or email already in use
-        </span>
-      }
+      {error && <span className={classes.register__error}>
+        Username or email already in use
+      </span>}
       <form 
         className={classes.register__form}
         onSubmit={handleSubmit}>
@@ -51,7 +49,6 @@ export default function Register() {
           placeholder='password' 
           onChange={e => setPassword(e.target.value)}
         />
-        <input type='password' placeholder='confirm password' />
         <button 
           className={classes.register__form__register}
           type='submit'>Register</button>

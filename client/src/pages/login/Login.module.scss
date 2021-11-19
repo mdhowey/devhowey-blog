@@ -44,6 +44,11 @@
         border: 1px solid $secondary;
         cursor: pointer;
       }
+      &:disabled {
+        background-color: $dkbg;
+        opacity: 0.8;
+        cursor: none;
+      }
     }
     &__register {
       border: none;

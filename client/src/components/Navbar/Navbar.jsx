@@ -3,9 +3,16 @@ import {BsGithub} from 'react-icons/bs';
 import {AiOutlineLinkedin} from 'react-icons/ai';
 import {BsSearch} from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { Context } from '../../context/Context';
 
 export default function Navbar() {
-  const user = false;
+  const { dispatch, user }= useContext(Context);
+
+  const handleLogout = () => {
+    dispatch({ type: 'LOGOUT' });
+  }
+
   return (
     <div className={classes.navbar}>
       <div className={classes.navbar__topleft}>
@@ -30,7 +37,11 @@ export default function Navbar() {
             {user && <Link className={classes.navbar__topcenter__navmenu__navitem} to='/newblog'>New Blog</Link>}
           </li>
           <li>
-            {user && <Link className={classes.navbar__topcenter__navmenu__navitem} to='/'>logout</Link>}
+            {user && 
+              <Link 
+                className={classes.navbar__topcenter__navmenu__navitem} 
+                onClick={handleLogout}
+                to='/'>logout</Link>}
           </li>
         </ul>
       </div>
