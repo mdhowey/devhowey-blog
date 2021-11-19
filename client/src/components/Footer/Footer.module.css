@@ -520,10 +520,81 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 60px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 675px;
   bottom: 0;
-  margin: 8px 0;
+  margin: 0;
   width: 100%;
+  background-image: url("../../assests/nelson_painting.jpeg");
+  background-size: cover;
+}
+
+.footer__random1__icon {
+  margin: 0 4px;
+  font-size: 96px;
+  color: transparent;
+}
+
+.footer__random1__icon:hover {
+  cursor: pointer;
+  color: #ff6e73;
+}
+
+.footer__random2__icon {
+  margin: 0 4px;
+  font-size: 96px;
+  color: transparent;
+}
+
+.footer__random2__icon:hover {
+  cursor: pointer;
+  color: #ff6e73;
+}
+
+.footer__random3__icon {
+  margin: 0 4px;
+  font-size: 96px;
+  color: transparent;
+}
+
+.footer__random3__icon:hover {
+  cursor: pointer;
+  color: #ff6e73;
+}
+
+.footer__random4__icon {
+  margin: 0 4px;
+  font-size: 96px;
+  color: transparent;
+}
+
+.footer__random4__icon:hover {
+  cursor: pointer;
+  color: #ff6e73;
+}
+
+.footer__random5__icon {
+  margin: 0 4px;
+  font-size: 96px;
+  color: transparent;
+}
+
+.footer__random5__icon:hover {
+  cursor: pointer;
+  color: #ff6e73;
+}
+
+.footer__random6__icon {
+  margin: 0 4px;
+  font-size: 96px;
+  color: transparent;
+}
+
+.footer__random6__icon:hover {
+  cursor: pointer;
+  color: #ff6e73;
 }
 
 .footer__center {
@@ -542,14 +613,10 @@ p {
           justify-content: center;
 }
 
-.footer__center__links {
-  background-color: #f2f2f2;
-  padding-top: 4px;
-  border-radius: 12px;
-}
-
 .footer__center__links__icon {
   margin: 0 4px;
+  font-size: 96px;
+  color: transparent;
 }
 
 .footer__center__links__icon:hover {
@@ -558,6 +625,7 @@ p {
 }
 
 .footer__center__howey {
-  font-size: 10px;
+  font-size: 12px;
+  color: white;
 }
 /*# sourceMappingURL=Footer.module.css.map */

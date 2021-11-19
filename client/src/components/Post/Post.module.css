@@ -524,6 +524,7 @@ p {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 500px;
 }
 
 .post__info {
@@ -536,15 +537,15 @@ p {
           flex-direction: column;
 }
 
-.post__info__cats {
+.post__info__tags {
   margin: 16px 0;
 }
 
-.post__info__cats__cat {
+.post__info__tags__tag {
   font-style: italic;
   margin-right: 8px;
   padding: 4px 8px;
-  border: 1px solid #333333;
+  border: 1px solid rga(#333333, 0.5);
   letter-spacing: 1px;
 }
 

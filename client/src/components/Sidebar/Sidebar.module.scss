@@ -3,10 +3,10 @@
 .sidebar {
   flex: 3;
   margin: $spacing-lg;
+  padding: 0 $spacing-md;
   padding-bottom: $footerHeight;
-  background: linear-gradient(rgb($primary, 0.5), rgb($primary, 0));
+  background: linear-gradient(rgb($primary, 0.3), rgb($light, 0));
   color: $dark;
-  border-radius: $btnRadius;
   display: flex;
   flex-direction: column;
   &__items {
@@ -43,9 +43,13 @@
     }
     &__img {
       width: 50vh;
+      padding: 0;
     }
     &__text {
       padding: 0 $spacing-md;
+      font-size: $font-md;
+      color: rgb($dark, 0.9);
+      line-height: $spacing-lg;
     }
     &__list {
       list-style: none;

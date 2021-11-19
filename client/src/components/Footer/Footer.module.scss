@@ -3,21 +3,90 @@
 .footer {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   height: $footerHeight;
   bottom: 0;
-  margin: $spacing-sm 0;
+  margin: 0;
   width: 100%;
+  background-image: url('../../assests/nelson_painting.jpeg');
+  background-size: cover;
+  &__random1 {
+      &__icon {
+      margin: 0 $spacing-xs;
+      font-size: $font-xxx;
+      color: transparent;
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
+    }
+  }
+  &__random2 {
+      &__icon {
+      margin: 0 $spacing-xs;
+      font-size: $font-xxx;
+      color: transparent;
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
+    }
+  }
+  &__random3 {
+      &__icon {
+      margin: 0 $spacing-xs;
+      font-size: $font-xxx;
+      color: transparent;
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
+    }
+  }
+  &__random4 {
+      &__icon {
+      margin: 0 $spacing-xs;
+      font-size: $font-xxx;
+      color: transparent;
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
+    }
+  }
+  &__random5 {
+      &__icon {
+      margin: 0 $spacing-xs;
+      font-size: $font-xxx;
+      color: transparent;
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
+    }
+  }
+  &__random6 {
+      &__icon {
+      margin: 0 $spacing-xs;
+      font-size: $font-xxx;
+      color: transparent;
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
+    }
+  }
   &__center {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     &__links{
-      background-color: $secondary;
-      padding-top: $spacing-xs;
-      border-radius: $btnRadius;
+      // padding-top: $spacing-xs;
       &__icon {
         margin: 0 $spacing-xs;
+        font-size: $font-xxx;
+        color: transparent;
         &:hover {
           cursor: pointer;
           color: $primary;
@@ -25,7 +94,8 @@
       }
     }
     &__howey {
-      font-size: $font-xxs;
+      font-size: $font-xs;
+      color: $light;
     }
   }
 }
