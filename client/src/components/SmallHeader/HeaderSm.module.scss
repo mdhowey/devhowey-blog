@@ -1,0 +1,8 @@
+@import '../../sass/index';
+
+.header {
+  width: 100%;
+  background-image: url('../../assests/nelson_painting.jpeg');
+  background-size: cover;
+  height: $spacing-xxl;
+}

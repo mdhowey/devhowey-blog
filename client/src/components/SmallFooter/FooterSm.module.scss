@@ -1,0 +1,29 @@
+@import '../../sass/index';
+
+.footer {
+  width: 100%;
+  background-image: url('../../assests/nelson_painting.jpeg');
+  background-size: cover;
+  height: $spacing-xxl;
+  &__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    &__links {
+      padding-top: $spacing-md;
+      &__icon {
+        font-size: $font-xxl;
+        color: $dark;
+        padding-top: $spacing-sm;
+        &:hover {
+          color: rgb($light, 0.5);
+        }
+      }
+    }
+    &__howey {
+      font-size: $font-sm;
+      color: $dark;
+    }
+  }
+}
