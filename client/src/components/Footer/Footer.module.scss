@@ -10,92 +10,33 @@
   width: 100%;
   background-image: url('../../assests/nelson_painting.jpeg');
   background-size: cover;
-  &__random1 {
-      &__icon {
-      margin: 0 $spacing-xs;
-      font-size: $font-xxx;
-      color: transparent;
-      &:hover {
-        cursor: pointer;
-        color: $primary;
-      }
-    }
-  }
-  &__random2 {
-      &__icon {
-      margin: 0 $spacing-xs;
-      font-size: $font-xxx;
-      color: transparent;
-      &:hover {
-        cursor: pointer;
-        color: $primary;
-      }
-    }
-  }
-  &__random3 {
-      &__icon {
-      margin: 0 $spacing-xs;
-      font-size: $font-xxx;
-      color: transparent;
-      &:hover {
-        cursor: pointer;
-        color: $primary;
-      }
-    }
-  }
-  &__random4 {
-      &__icon {
-      margin: 0 $spacing-xs;
-      font-size: $font-xxx;
-      color: transparent;
-      &:hover {
-        cursor: pointer;
-        color: $primary;
-      }
-    }
-  }
-  &__random5 {
-      &__icon {
-      margin: 0 $spacing-xs;
-      font-size: $font-xxx;
-      color: transparent;
-      &:hover {
-        cursor: pointer;
-        color: $primary;
-      }
-    }
-  }
-  &__random6 {
-      &__icon {
-      margin: 0 $spacing-xs;
-      font-size: $font-xxx;
-      color: transparent;
-      &:hover {
-        cursor: pointer;
-        color: $primary;
-      }
-    }
-  }
   &__center {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     &__links{
-      // padding-top: $spacing-xs;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &__tagline {
+        font-size: $font-xl;
+        color: rgb($dark, 0.8);
+      }
       &__icon {
-        margin: 0 $spacing-xs;
+        margin-bottom: $spacing-xxl;
         font-size: $font-xxx;
         color: transparent;
+        transition: 1.3s;
         &:hover {
           cursor: pointer;
-          color: $primary;
+          color: rgb($primary, 0.5);
         }
       }
     }
     &__howey {
-      font-size: $font-xs;
-      color: $light;
+      font-size: $font-md;
+      color: rgb($light, 0.7);
     }
   }
 }
