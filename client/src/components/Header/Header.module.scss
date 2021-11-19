@@ -1,7 +1,7 @@
 @import '../../sass/index';
 
 .header {
-  margin-top: $headerHeight;
+  margin-top: calc(37vh - #{$headerHeight});
   &__titles {
     display: flex;
     flex-direction: column;
@@ -10,15 +10,16 @@
     color: $primary;
     &__subtitleLg {
       position: absolute;
-      top: 15%;
-      font-size: $font-xl;
+      top: 10%;
+      font-size: $font-xxx;
       font-family: $Rubik;
     }
     &__subtitleSm {
       position: absolute;
-      top: 26%;
+      top: 23.5%;
       font-size: $font-md;
-      color: $light;
+      color: rgb($dark, 0.5);
+      font-family: $Rubik;
     }
   }
   &__img {

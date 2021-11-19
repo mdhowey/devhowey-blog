@@ -36,7 +36,7 @@
       list-style: none;
       &__navitem {
         margin: 0 $spacing-sm;
-        font-size: $font-sm;
+        font-size: $font-md;
         font-family: $RobotoMono;
         text-transform: uppercase;
         color: inherit;
@@ -70,7 +70,7 @@
       }
     }
     &__nouser {
-      font-size: $font-xxs;
+      font-size: $font-md;
       margin-right: $spacing-md;
       font-family: $RobotoMono;
       text-transform: uppercase;

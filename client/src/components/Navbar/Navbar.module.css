@@ -515,7 +515,7 @@ p {
 
 .navbar {
   width: 100%;
-  height: 60px;
+  height: 45px;
   background-color: white;
   position: -webkit-sticky;
   position: sticky;
@@ -579,7 +579,7 @@ p {
 
 .navbar__topcenter__navmenu__navitem {
   margin: 0 8px;
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Roboto Mono", monospace;
   text-transform: uppercase;
   color: inherit;
@@ -627,7 +627,7 @@ p {
 }
 
 .navbar__topright__nouser {
-  font-size: 10px;
+  font-size: 18px;
   margin-right: 16px;
   font-family: "Roboto Mono", monospace;
   text-transform: uppercase;

@@ -514,7 +514,7 @@ p {
 }
 
 .header {
-  margin-top: 60px;
+  margin-top: calc(37vh - 45px);
 }
 
 .header__titles {
@@ -534,16 +534,17 @@ p {
 
 .header__titles__subtitleLg {
   position: absolute;
-  top: 15%;
-  font-size: 36px;
+  top: 5%;
+  font-size: 96px;
   font-family: "Rubik Mono One", sans-serif;
 }
 
 .header__titles__subtitleSm {
   position: absolute;
-  top: 26%;
+  top: 20%;
   font-size: 18px;
   color: white;
+  font-family: "Rubik Mono One", sans-serif;
 }
 
 .header__img {
