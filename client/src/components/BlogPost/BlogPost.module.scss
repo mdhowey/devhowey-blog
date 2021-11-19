@@ -5,7 +5,10 @@
   display: flex;
   flex-direction: column;
   &__wrapper {
+    margin-top: $spacing-lg;
+    margin-left: $spacing-lg;
     padding: $spacing-md $spacing-lg;
+    background: linear-gradient(rgb($primary, 0.3), rgb($secondary, 0.1));
     &__img {
       width: 100%;
       margin-top: $spacing-md;

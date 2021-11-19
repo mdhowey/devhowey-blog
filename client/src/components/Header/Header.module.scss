@@ -1,30 +1,30 @@
 @import '../../sass/index';
 
 .header {
-  margin-top: calc(37vh - #{$headerHeight});
+  margin-bottom: $spacing-xl;
   &__titles {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: $RobotoMono;
-    color: $primary;
     &__subtitleLg {
+      color: rgb($dark, 0.6);
       position: absolute;
-      top: 10%;
+      top: 11%;
       font-size: $font-xxx;
       font-family: $Rubik;
     }
     &__subtitleSm {
       position: absolute;
-      top: 23.5%;
+      top: 52%;
       font-size: $font-md;
-      color: rgb($dark, 0.5);
-      font-family: $Rubik;
+      color: rgb($light, 0.4);
+      // font-family: $Rubik;
     }
   }
   &__img {
     width: 100%;
-    height: 450px;
+    height: 675px;
     object-fit: cover;
   }
 }

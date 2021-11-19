@@ -5,20 +5,24 @@
   min-width: 375px;
   max-width: 750px;
   margin: 0;
+  padding: 0 $spacing-md;
+  margin-bottom: $spacing-lg;
+  background: linear-gradient(rgb($light, 0), rgb($primary, 0.1));
   &__img {
     width: 100%;
     object-fit: cover;
+    height: 500px;
   }
   &__info {
     display: flex;
     flex-direction: column;
-    &__cats {
+    &__tags {
       margin: $spacing-md 0;
-      &__cat {
+      &__tag {
         font-style: italic;
         margin-right: $spacing-sm;
         padding: $spacing-xs $spacing-sm;
-        border: 1px solid $dark;
+        border: 1px solid rgb($dark, 0.1);
         letter-spacing: $spacing-xxs;
       }
     }
@@ -26,6 +30,8 @@
       margin-bottom: $spacing-sm;
       font-size: $font-lg;
       font-weight: 700;
+      text-decoration: none;
+      color: $dark;
     }
     &__date {
       font-size: $font-xs;

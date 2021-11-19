@@ -27,7 +27,7 @@ export default function Sidebar() {
           alt='hipster' 
           />
         <p className={classes.sidebar__items__text}>
-          I'm baby seitan pickled neutra, banh mi lomo af pug mumblecore man bun quinoa. Etsy taiyaki neutra, raw denim sriracha bicycle rights godard vaporware trust fund occupy blue bottle distillery. Single-origin coffee man bun vexillologist succulents, pug pitchfork la croix whatever tote bag twee raw denim fanny pack kinfolk heirloom. Meggings vice beard banh mi irony locavore hexagon cloud bread tattooed keytar disrupt.
+          A Minnesotan in Mexico who enjoys finding patterns in syntax, both in spoken and programming languages. As an English teacher turned software engineer, my perspective allows me to break down challenging concepts for others. 
         </p>
       </div>
       <div className={classes.sidebar__items}>

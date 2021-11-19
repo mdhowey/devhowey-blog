@@ -5,6 +5,7 @@ import Posts from '../../components/Posts/Posts'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import classes from './Home.module.scss'
 import { useLocation } from 'react-router';
+import Footer from '../../components/Footer/Footer';
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -29,6 +30,7 @@ export default function Home() {
         <Posts posts={posts} />
         <Sidebar />
       </div>
+      <Footer />
     </>
   )
 }

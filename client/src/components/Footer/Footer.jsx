@@ -4,14 +4,15 @@ import {AiOutlineLinkedin} from 'react-icons/ai'
 
 export default function Footer() {
   return (
-    <div className={classes.footer}>
+    <footer className={classes.footer}>
       <div className={classes.footer__center}>
         <div className={classes.footer__center__links}>
+          <p className={classes.footer__center__links__tagline}>you won't know unless you ask</p>
           <BsGithub className={classes.footer__center__links__icon}/>
           <AiOutlineLinkedin className={classes.footer__center__links__icon}/>
         </div>
         <p className={classes.footer__center__howey}>&copy; devhowey 2021</p>
       </div>
-    </div>
+    </footer>
   )
 }

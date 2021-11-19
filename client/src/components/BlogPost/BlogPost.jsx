@@ -1,10 +1,11 @@
 import classes from './BlogPost.module.scss';
 import axios from 'axios';
-import {FiEdit} from 'react-icons/fi';
-import {RiDeleteBin5Line} from 'react-icons/ri';
+import { FiEdit } from 'react-icons/fi';
+import { RiDeleteBin5Line } from 'react-icons/ri';
 import { useLocation } from 'react-router';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import DefaultImg from '../../assests/portfolio_backgrounds_2.jpg'
 
 export default function BlogPost() {
   const location = useLocation()
@@ -24,18 +25,28 @@ export default function BlogPost() {
   return (
     <div className={classes.blogpost}>
       <div className={classes.blogpost__wrapper}>
-        {blogPost.img && (
-          <img 
-            className={classes.blogpost__wrapper__img} 
-            src={blogPost.img} 
-            alt={blogPost.title}
+        {blogPost.img ? (
+
+          <img
+            className={classes.blogpost__wrapper__img}
+            src={blogPost.img}
+            alt='new react devtools'
           />
+
+        ) : (
+
+          <img
+            className={classes.blogpost__wrapper__img}
+            src={DefaultImg}
+            alt='new react devtools'
+          />
+
         )}
         <div className={classes.blogpost__wrapper__container}>
           <h1 className={classes.blogpost__wrapper__container__title}>{blogPost.title}</h1>
           <div className={classes.blogpost__wrapper__container__btncontainer}>
-            <FiEdit className={classes.blogpost__wrapper__container__btncontainer__edit}/>
-            <RiDeleteBin5Line className={classes.blogpost__wrapper__container__btncontainer__delete}/>
+            <FiEdit className={classes.blogpost__wrapper__container__btncontainer__edit} />
+            <RiDeleteBin5Line className={classes.blogpost__wrapper__container__btncontainer__delete} />
           </div>
         </div>
         <div className={classes.blogpost__wrapper__info}>
