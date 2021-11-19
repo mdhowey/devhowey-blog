@@ -1,8 +1,21 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { BsGithub } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 import classes from './Sidebar.module.scss';
 
 export default function Sidebar() {
+  const [tags, setTags] = useState([]);
+
+  useEffect(() => {
+    const getTags = async () => 
+    {
+      const res = await axios.get('/tags')
+      setTags(res.data)
+    }
+    getTags();
+  }, [])
   return (
     <div className={classes.sidebar}>
       <div className={classes.sidebar__items}>
@@ -72,14 +85,11 @@ export default function Sidebar() {
       <div className={classes.sidebar__items}>
         <span className={classes.sidebar__items__title}>blog categories</span>
         <ul className={classes.sidebar__items__list}>
-          <li className={classes.sidebar__items__list__item}>JS</li>
-          <li className={classes.sidebar__items__list__item}>CSS</li>
-          <li className={classes.sidebar__items__list__item}>React</li>
-          <li className={classes.sidebar__items__list__item}>HTML</li>
-          <li className={classes.sidebar__items__list__item}>Node.js</li>
-          <li className={classes.sidebar__items__list__item}>Express</li>
-          <li className={classes.sidebar__items__list__item}>Database</li>
-          <li className={classes.sidebar__items__list__item}>New_Dev</li>
+          {tags.map(t => (
+            <Link to={`/?tag=${t.tag}`}>
+              <li className={classes.sidebar__items__list__item}>{t.tag}</li>
+            </Link>
+          ))}
         </ul>
       </div>
       <div className={classes.sidebar__items}>
