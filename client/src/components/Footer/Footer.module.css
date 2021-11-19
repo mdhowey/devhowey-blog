@@ -520,8 +520,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: -webkit-sticky;
-  position: sticky;
+  height: 60px;
   bottom: 0;
   margin: 8px 0;
   width: 100%;

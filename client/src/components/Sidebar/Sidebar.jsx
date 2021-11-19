@@ -1,15 +1,29 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { BsGithub } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 import classes from './Sidebar.module.scss';
+import goofy_dev from '../../assests/goofy_profile.jpeg'
 
 export default function Sidebar() {
+  const [tags, setTags] = useState([]);
+
+  useEffect(() => {
+    const getTags = async () => 
+    {
+      const res = await axios.get('/tags')
+      setTags(res.data)
+    }
+    getTags();
+  }, [])
   return (
     <div className={classes.sidebar}>
       <div className={classes.sidebar__items}>
         <span className={classes.sidebar__items__title}>about me</span>
         <img 
           className={classes.sidebar__items__img}
-          src='https://s1.significados.com/foto/hipster-358479-1920_sm.jpg' 
+          src={goofy_dev} 
           alt='hipster' 
           />
         <p className={classes.sidebar__items__text}>
@@ -17,7 +31,7 @@ export default function Sidebar() {
         </p>
       </div>
       <div className={classes.sidebar__items}>
-        <span className={classes.sidebar__items__title}>projects</span>
+        <span className={classes.sidebar__items__title}>featured projects</span>
         <ul className={classes.sidebar__items__projects}>
           <li className={classes.sidebar__items__projects__item}>
             <BsGithub className={classes.sidebar__items__projects__item__icon}/>
@@ -35,7 +49,7 @@ export default function Sidebar() {
             <BsGithub className={classes.sidebar__items__projects__item__icon}/>
             Surrender
           </li>
-          <li className={classes.sidebar__items__projects__item}>
+          {/* <li className={classes.sidebar__items__projects__item}>
             <BsGithub className={classes.sidebar__items__projects__item__icon}/>
             Fin Cap
           </li>
@@ -66,20 +80,17 @@ export default function Sidebar() {
           <li className={classes.sidebar__items__projects__item}>
             <BsGithub className={classes.sidebar__items__projects__item__icon}/>
             This Site!
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className={classes.sidebar__items}>
         <span className={classes.sidebar__items__title}>blog categories</span>
         <ul className={classes.sidebar__items__list}>
-          <li className={classes.sidebar__items__list__item}>JS</li>
-          <li className={classes.sidebar__items__list__item}>CSS</li>
-          <li className={classes.sidebar__items__list__item}>React</li>
-          <li className={classes.sidebar__items__list__item}>HTML</li>
-          <li className={classes.sidebar__items__list__item}>Node.js</li>
-          <li className={classes.sidebar__items__list__item}>Express</li>
-          <li className={classes.sidebar__items__list__item}>Database</li>
-          <li className={classes.sidebar__items__list__item}>New_Dev</li>
+          {tags.map(t => (
+            <Link to={`/?tag=${t.tag}`}>
+              <li className={classes.sidebar__items__list__item}>{t.tag}</li>
+            </Link>
+          ))}
         </ul>
       </div>
       <div className={classes.sidebar__items}>

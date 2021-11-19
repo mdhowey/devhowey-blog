@@ -27,7 +27,6 @@ function App() {
           <Route path='/settings' element={user ? <ProfileSettings /> : <Register />}/>
           <Route path='/post/:postId' element={<ShowPost />}/>
         </Routes>
-      <Footer />
     </Router>
   );
 }

@@ -4,7 +4,8 @@
   flex: 3;
   margin: $spacing-lg;
   padding-bottom: $footerHeight;
-  background-color: $secondary;
+  background: linear-gradient(rgb($primary, 0.5), rgb($primary, 0));
+  color: $dark;
   border-radius: $btnRadius;
   display: flex;
   flex-direction: column;
@@ -16,6 +17,10 @@
         display: flex;
         align-items: center;
         font-size: $font-md;
+        &:hover {
+          color: $primary;
+          cursor: pointer;
+        }
         &__icon {
           margin-right: $spacing-sm;
           cursor: pointer;
@@ -27,17 +32,17 @@
     flex-direction: column;
     &__title {
       font-family: $RobotoMono;
+      font-weight: 700;
       text-transform: uppercase;
       padding: $spacing-sm;
-      margin: $spacing-md;
-      font-size: $font-md;
-      border-bottom: 1px solid $dkbg;
-      border-top: 1px solid $dkbg;
+      margin: $spacing-md 0;
+      font-size: $font-lg;
+      border-bottom: 1px solid rgb($dark, 0.6);
+      border-top: 1px solid rgb($dark, 0.6);
       text-align: center;
     }
     &__img {
-      padding: 0 $spacing-md;
-      border-radius: $btnRadius;
+      width: 50vh;
     }
     &__text {
       padding: 0 $spacing-md;
@@ -47,9 +52,14 @@
       margin: 0;
       font-family: $RobotoMono;
       &__item {
+        font-size: $font-lg;
+        color: $dark;
         display: inline-block;
         width: 50%;
-        cursor: pointer;
+        &:hover {
+          color: $primary;
+          cursor: pointer;
+        }
       }
     }
     &__icons {

@@ -514,7 +514,7 @@ p {
 }
 
 .register {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 45px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
