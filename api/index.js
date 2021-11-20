@@ -23,18 +23,18 @@ mongoose.connect(process.env.MONGO_URL, {
 
 const store = multer.diskStorage({
   destination:(req, file, callback) => {
-    callback(null, 'assests')
+    callback(null, 'images')
   }, 
   filename: (req, file, callback) => {
     callback(null, req.body.name);
-  }
-})
+  },
+});
 
-const upload = multer({ store: store })
+const upload = multer({ store: store });
 
-app.post('/api/upload', upload.single('file', (req, res) => {
+app.post('/api/upload', upload.single('file'), (req, res) => {
   res.status(200).json('File uploaded successfully')
-}))
+});
 
 app.use('/api/auth', authRoute);
 app.use('/api/users', usersRoute);

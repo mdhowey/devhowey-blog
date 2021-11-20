@@ -12,11 +12,11 @@ export default function Sidebar() {
   useEffect(() => {
     const getTags = async () => 
     {
-      const res = await axios.get('/tags')
-      setTags(res.data)
+      const res = await axios.get('/tags');
+      setTags(res.data);
     }
     getTags();
-  }, [])
+  }, []);
   return (
     <div className={classes.sidebar}>
       <div className={classes.sidebar__items}>

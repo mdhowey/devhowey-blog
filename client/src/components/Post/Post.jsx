@@ -11,7 +11,7 @@ export default function Post({ post }) {
         <img
           className={classes.post__img}
           src={PF + post.photo} 
-          alt='new react devtools' 
+          alt={post.title} 
         />
 
         ) : (
